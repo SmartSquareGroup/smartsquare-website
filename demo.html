@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Demo chatbot — smartsquare</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <header class="nav nav--sub">
+    <div class="container nav__inner">
+      <a class="logo" href="/"><span class="logo__mark"></span><span class="logo__text">smartsquare</span></a>
+      <div class="nav__spacer"></div>
+    </div>
+  </header>
+
+  <main class="container page">
+    <h1>Demo chatbot</h1>
+    <p class="muted">Un demo simplu „front-end only”. Ulterior îl conectăm la OpenAI și back-end.</p>
+
+    <div class="chatbox card demo-chat">
+      <div class="chatbox__header">
+        <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+        <span>demo · smartsquare</span>
+      </div>
+      <div class="chatbox__body" id="demoBody">
+        <div class="msg msg--bot">Salut! Sunt asistentul smartsquare. Spune-mi despre business-ul tău 😊</div>
+      </div>
+      <div class="chatbox__input">
+        <input type="text" id="demoInput" placeholder="Scrie aici..." />
+        <button class="btn" id="demoSend">Trimite</button>
+      </div>
+    </div>
+
+    <p class="muted">*La integrarea reală, mesajele merg prin API, log, analytics, GDPR consent etc.</p>
+  </main>
+
+  <footer class="footer footer--sub">
+    <div class="container footer__bottom">© <span id="y"></span> smartsquare.</div>
+  </footer>
+  <script src="js/app.js"></script>
+</body>
+</html>

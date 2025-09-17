@@ -1,57 +1,213 @@
 <!doctype html>
-<html lang="en">
+<html lang="ro">
 <head>
-    <link rel="stylesheet" href="./style.css">
-  <script src="./script.js" defer></script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>SmartSquare — AI chatbots & modern sites</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <title>smartsquare — Chatboți care vând, ghidează și învață</title>
+  <meta name="description" content="Chatboți pentru site-ul tău: colectare lead-uri, suport, vânzare și integrare rapidă." />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Montserrat font -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
+  <!-- NAV -->
   <header class="nav">
-    <div class="container">
-      <div class="logo">smart<span>square</span></div>
-      <nav>
-        <a href="#features">Features</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#contact" class="btn">Contact</a>
+    <div class="container nav__inner">
+      <a class="logo" href="/"><span class="logo__mark" aria-hidden="true"></span><span class="logo__text">smartsquare</span></a>
+      <nav class="nav__links">
+        <a href="#features">Product</a>
+        <a href="#solutions">Solutions</a>
+        <a href="/pricing.html">Pricing</a>
+        <a href="#resources">Resources</a>
+        <a href="#about">About</a>
       </nav>
+      <div class="nav__ctas">
+        <a class="btn btn--ghost" href="/contact.html">Contact</a>
+        <a class="btn" href="/demo.html">Demo chatbot</a>
+      </div>
+      <button class="nav__burger" aria-label="Menu"></button>
     </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="container">
-        <h1>Build smarter conversations.</h1>
-        <p>AI chatbots și site-uri rapide, moderne, care convertesc.</p>
-        <div class="cta">
-          <a href="#demo" class="btn">Vezi demo chatbot</a>
-          <a href="#pricing" class="btn ghost">Planuri & prețuri</a>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero__grid">
+      <div class="hero__copy">
+        <h1>Chatboți care <span class="grad">vând</span>, ghidează și învață din conversații.</h1>
+        <p>Instalare în 1 linie de cod. Multilingv, personalizat brandului tău, integrat cu OpenAI.</p>
+        <div class="hero__ctas">
+          <a class="btn btn--lg" href="/demo.html">Începe demo</a>
+          <a class="btn btn--ghost btn--lg" href="/contact.html">Vorbește cu noi</a>
+        </div>
+        <div class="hero__subnote">*Demo-ul scrie singur 2–3 mesaje ca să vezi experiența.</div>
+      </div>
+      <div class="hero__mock">
+        <div class="chatbox card fade-in" data-animate>
+          <div class="chatbox__header">
+            <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+            <span>smartsquare · demo</span>
+          </div>
+          <div class="chatbox__body" id="typing-demo">
+            <!-- Mesaje generate de app.js (typing effect) -->
+          </div>
+          <div class="chatbox__input">
+            <input type="text" placeholder="Scrie un mesaj..." disabled>
+            <button class="btn" disabled>Trimite</button>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="features" class="section">
-      <div class="container">
-        <h2>De ce SmartSquare</h2>
-        <ul class="grid">
-          <li><h3>Răspunsuri naturale</h3><p>Integrări OpenAI pentru RO/EN fluente.</p></li>
-          <li><h3>Lead capturing</h3><p>Colectează email/telefon conform GDPR.</p></li>
-          <li><h3>Rapid & sigur</h3><p>Site static, CDN Cloudflare, SEO-ready.</p></li>
-        </ul>
+  <!-- LOGOS -->
+  <section class="logos" aria-label="Trusted by">
+    <div class="container logos__row fade-in" data-animate>
+      <div class="logo-pill">Retail</div>
+      <div class="logo-pill">Clinică</div>
+      <div class="logo-pill">Edu</div>
+      <div class="logo-pill">Services</div>
+      <div class="logo-pill">B2B</div>
+      <div class="logo-pill">Real-estate</div>
+    </div>
+  </section>
+
+  <!-- FEATURES GRID -->
+  <section id="features" class="features">
+    <div class="container">
+      <h2 class="section-title">Tot ce îți trebuie, <span class="grad">din prima</span></h2>
+      <div class="grid-3">
+        <article class="card fade-in" data-animate>
+          <h3>Răspunde instant</h3>
+          <p>Timp de răspuns sub secundă pentru întrebări frecvente și ghidaj în pagină.</p>
+        </article>
+        <article class="card fade-in" data-animate>
+          <h3>Colectează lead-uri</h3>
+          <p>Strânge automat nume, email, telefon — totul cu consimțământ și log audit.</p>
+        </article>
+        <article class="card fade-in" data-animate>
+          <h3>Integrare simplă</h3>
+          <p>OpenAI, CRM, email, WhatsApp/Telegram. Instalare în 1 linie de cod.</p>
+        </article>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <footer class="footer">
-    <div class="container">© <span id="year"></span> SmartSquare</div>
+  <!-- IMAGINE MARE #1 -->
+  <section class="wide-visual">
+    <div class="container">
+      <div class="wide-visual__box parallax" data-parallax>
+        <!-- Placeholder imagine mare (înlocuim ulterior cu mockup real) -->
+        <div class="placeholder-visual">IMAGINE MARE #1 — UI flow</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="steps">
+    <div class="container">
+      <h2 class="section-title">Cum funcționează</h2>
+      <div class="grid-3">
+        <div class="step card fade-in" data-animate>
+          <div class="step__no">1</div>
+          <h3>Brief rapid</h3>
+          <p>Spui ce vrei să facă chatbotul: ton, limbă, obiective.</p>
+        </div>
+        <div class="step card fade-in" data-animate>
+          <div class="step__no">2</div>
+          <h3>Prototip live</h3>
+          <p>Îți dăm un link de test. Ajustăm răspunsurile și logica.</p>
+        </div>
+        <div class="step card fade-in" data-animate>
+          <div class="step__no">3</div>
+          <h3>Instalare & optimizare</h3>
+          <p>1 linie de cod pe site + monitorizare continuă.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMAGINE MARE #2 -->
+  <section class="wide-visual">
+    <div class="container">
+      <div class="wide-visual__box parallax" data-parallax>
+        <div class="placeholder-visual">IMAGINE MARE #2 — Personalizare & stil</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- USE CASES -->
+  <section id="solutions" class="usecases">
+    <div class="container">
+      <h2 class="section-title">Use cases</h2>
+      <div class="grid-3">
+        <div class="card fade-in" data-animate><h3>E-commerce</h3><p>Ghidare produs, întrebări frecvente, upsell.</p></div>
+        <div class="card fade-in" data-animate><h3>Servicii</h3><p>Programări, estimări, triere automată.</p></div>
+        <div class="card fade-in" data-animate><h3>B2B</h3><p>Calificare lead, integrare CRM, follow-up.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMAGINE MARE #3 -->
+  <section class="wide-visual">
+    <div class="container">
+      <div class="wide-visual__box parallax" data-parallax>
+        <div class="placeholder-visual">IMAGINE MARE #3 — From chat to checkout</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING PREVIEW -->
+  <section class="pricing-preview">
+    <div class="container">
+      <h2 class="section-title">Prețuri flexibile</h2>
+      <p class="muted">Planuri pentru orice etapă: Basic, Standard, Premium + servicii complete.</p>
+      <a class="btn" href="/pricing.html">Vezi planurile</a>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta">
+    <div class="container cta__inner">
+      <h2>Pornește demo-ul și vezi diferența.</h2>
+      <div>
+        <a class="btn btn--lg" href="/demo.html">Start demo</a>
+        <a class="btn btn--ghost btn--lg" href="/contact.html">Contact</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="about">
+    <div class="container footer__grid">
+      <div>
+        <a class="logo logo--footer" href="/"><span class="logo__mark"></span><span class="logo__text">smartsquare</span></a>
+        <p class="muted">Chatboți performanți, integrare simplă, rezultate măsurabile.</p>
+      </div>
+      <div class="footer__cols">
+        <div>
+          <h4>Product</h4>
+          <a href="#features">Features</a>
+          <a href="/pricing.html">Pricing</a>
+          <a href="/demo.html">Demo</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="#about">About</a>
+          <a href="/contact.html">Contact</a>
+          <a href="#">Careers</a>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      © <span id="y"></span> smartsquare. Toate drepturile rezervate.
+    </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
