@@ -1,0 +1,1059 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SmartSquare</title>
+
+  <link rel="preload" href="./assets/videos/hero.mp4" as="video" type="video/mp4">
+  <link rel="stylesheet" href="./assets/style.css?v=3">
+</head>
+<body>
+
+  <!-- Navbar -->
+    <nav class="nav">
+      <div class="container nav__inner">
+        <a href="#" class="nav__logo" aria-label="SmartSquare">
+          <span>smartsquare</span>
+        </a>
+
+        <ul class="nav__links">
+          <li><a href="#home" data-i18n="nav.home">Home</a></li>
+          <li><a href="#industries" data-i18n="nav.industries">Industrii</a></li>
+          <li><a href="#pricing" data-i18n="nav.pricing">Prețuri</a></li>
+          <li><a href="#demo" data-i18n="nav.demo">Demo</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+
+        <a href="#contact" class="btn btn--nav btn-gradient btn--pill" data-i18n="nav.contactSales">Contact Sales</a>
+
+        <!-- Language switch -->
+        <div class="lang-switch" role="group" aria-label="Language switch">
+          <button class="lang-btn" data-lang="ro" aria-pressed="true">RO</button>
+          <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+
+        <button class="nav__menu" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+
+
+    <!-- Chatbot bubble -->
+    <div class="chatbot" id="chatbot">
+      <div class="chatbot__msg chatbot__msg--1" data-i18n="chat.hello">Bună! 👋</div>
+      <div class="chatbot__msg chatbot__msg--2" data-i18n="chat.help">Sunt aici ca să te ajut.</div>
+      <button class="chatbot__bubble" aria-label="Deschide chatbot">
+        <span class="pulse"></span>
+        <svg viewBox="0 0 24 24" class="chatbot__icon" aria-hidden="true">
+          <path d="M12 3C7.03 3 3 6.58 3 11c0 2.28 1.08 4.35 2.83 5.83L5 21l4.38-1.63C10.1 19.46 11.03 19.5 12 19.5c4.97 0 9-3.58 9-8.5S16.97 3 12 3z" fill="currentColor"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+<section class="intro-cluster" id="intro-cluster">
+  <video class="cluster-bg" playsinline muted loop autoplay poster="assets/videos/hero-poster.jpg"></video>
+  <div class="cluster-overlay"></div>
+
+  <!-- HERO -->
+  <header class="hero" id="home">
+    <!-- Video background -->
+    <video class="hero__video" src="./assets/videos/hero.mp4"
+           autoplay muted loop playsinline
+           poster="./assets/videos/hero-poster.jpg"></video>
+    <div class="hero__overlay"></div>
+
+
+    <!-- Hero content -->
+    <div class="container hero__content">
+      <div class="hero__left">
+        <h1 class="hero__title" data-i18n="hero.title">AI care vinde, răspunde și învață în timp real</h1>
+        <p class="hero__subtitle" data-i18n="hero.subtitle">Implementăm agenți AI naturali, integrați în canalele tale – fără să scrii cod.</p>
+        <p class="hero__desc" data-i18n="hero.desc">De la răspunsuri instant la generare de lead-uri și programări, SmartSquare îți crește conversiile și reduce costurile suportului.</p>
+
+        <!-- CTA group -->
+        <form class="cta__group cta--pill" onsubmit="return false;">
+          <input
+            type="email"
+            class="input"
+            data-i18n-placeholder="form.email"
+            placeholder="Emailul tău"
+            aria-label="Email">
+           <button class="btn btn-gradient btn--h40" type="submit" data-i18n="hero.ctaQuote">Cere ofertă</button>
+        </form>
+
+        <button class="btn btn-gradient btn--h44 cta__talk" type="button" data-i18n="hero.ctaTalk">Vorbește cu noi</button>
+      </div>
+    </div>
+
+
+<!-- 2) Logo-uri (1 rând × 3 coloane, teleport swap la 5s) -->
+<section class="logos-teleport" id="logos">
+  <div class="blend-top"></div>
+  <div class="container">
+
+    <!-- sloturile vizibile (3 coloane) -->
+    <ul class="logos-slots" role="list">
+  <li class="logo-slot"><img alt=""></li>
+  <li class="logo-slot"><img alt=""></li>
+  <li class="logo-slot"><img alt=""></li>
+</ul>
+
+    <!-- pool-ul (invizibil) cu restul de logo-uri, color; pot fi oricâte -->
+    <div class="logos-pool" aria-hidden="true" hidden>
+      <img src="assets/logos/microsoft.svg"  data-i18n-alt="logos.altMicrosoft"  alt="Microsoft">
+    </div>
+  </div>
+  <div class="blend-bottom"></div>
+ </section>
+</section> <!-- end .intro-cluster -->
+
+
+<!-- 3) Avantaje rapide (2 rânduri × 4 coloane) -->
+<section class="fast-benefits" id="benefits">
+  <div class="container">
+    <header class="fb__header">
+      <h2 class="fb__title" data-i18n="fb.title">De ce SmartSquare</h2>
+      <p class="fb__subtitle" data-i18n="fb.subtitle">Rezultate rapide, integrare fluidă, impact imediat.</p>
+    </header>
+
+    <div class="fb__grid">
+  <article class="fb__card reveal" data-accent="1">
+    <h3 data-i18n="fb.item1.t">Crește vânzările</h3>
+    <p  data-i18n="fb.item1.d">Conversii mai mari cu agenți AI proactivi.</p>
+    <a class="fb__more" href="#industries" data-i18n="fb.more">Learn more</a>
+  </article>
+
+  <article class="fb__card reveal" data-accent="2">
+    <h3 data-i18n="fb.item2.t">Disponibil 24/7</h3>
+    <p  data-i18n="fb.item2.d">Răspunsuri instant, non-stop.</p>
+    <a class="fb__more" href="#industries" data-i18n="fb.more">Learn more</a>
+  </article>
+
+  <article class="fb__card reveal" data-accent="3">
+    <h3 data-i18n="fb.item3.t">Reduce costuri</h3>
+    <p  data-i18n="fb.item3.d">Automatizezi suportul și pre-calificarea.</p>
+    <a class="fb__more" href="#industries" data-i18n="fb.more">Learn more</a>
+  </article>
+
+  <article class="fb__card reveal" data-accent="4">
+    <h3 data-i18n="fb.item4.t">Integrări facile</h3>
+    <p  data-i18n="fb.item4.d">WhatsApp, Telegram, Mail, Messenger etc.</p>
+    <a class="fb__more" href="#industries" data-i18n="fb.more">Learn more</a>
+  </article>
+
+  <article class="fb__card reveal" data-accent="5">
+    <h3 data-i18n="fb.item5.t">AI natural</h3>
+    <p  data-i18n="fb.item5.d">Conversații umane, învață continuu.</p>
+    <a class="fb__more" href="#industries" data-i18n="fb.more">Learn more</a>
+  </article>
+
+  <article class="fb__card reveal" data-accent="6">
+    <h3 data-i18n="fb.item6.t">Lead-uri mai bune</h3>
+    <p  data-i18n="fb.item6.d">Calificare și routing automată.</p>
+    <a class="fb__more" href="#industries" data-i18n="fb.more">Learn more</a>
+  </article>
+
+  <article class="fb__card reveal" data-accent="7">
+    <h3 data-i18n="fb.item7.t">Cloud hosting</h3>
+    <p  data-i18n="fb.item7.d">Performanță globală, SLA.</p>
+    <a class="fb__more" href="#industries" data-i18n="fb.more">Learn more</a>
+  </article>
+
+  <article class="fb__card reveal" data-accent="8">
+    <h3 data-i18n="fb.item8.t">Securitate</h3>
+    <p  data-i18n="fb.item8.d">Privacy enterprise, conformitate.</p>
+    <a class="fb__more" href="#industries" data-i18n="fb.more">Learn more</a>
+  </article>
+</div>
+  </div>
+  <div class="blend-bottom blend-to-gray"></div>
+</section>
+
+
+
+<!-- 4) Demo Chatbot -->
+<section class="demo" id="demo">
+  <div class="container">
+    <div class="demo__grid">
+      <!-- Stânga: media (placeholder până ai mockup-ul) -->
+      <div class="demo__media">
+      <div class="demo__mock reveal" aria-hidden="true"></div>
+    </div>
+
+
+      <!-- Dreapta: text + CTA -->
+      <div class="demo__copy reveal">
+        <h2 class="demo__title" data-i18n="demo.title">
+          Testează chatbotul nostru, direct în browser
+        </h2>
+        <p class="demo__desc" data-i18n="demo.desc">
+          Vezi cum răspunde natural, califică lead-uri și programează întâlniri – în timp real.
+        </p>
+
+        <div class="demo__cta">
+          <a href="#demo-page" class="btn btn-gradient demo-cta" data-i18n="demo.cta">
+            Testează demo
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ===== 5. Industries ===== -->
+<section class="industries" id="industries">
+  <div class="container">
+    <header class="ind_header">
+      <div class="ind_text">
+        <h2 class="ind_title" data-i18n="ind.title">Industries we serve</h2>
+        <p class="ind_desc" data-i18n="ind.desc">
+          From startups and e-commerce to healthcare and finance — SmartSquare adapts to each vertical.
+        </p>
+      </div>
+
+      <div class="ind_controls">
+        <button class="ind_btn ind_prev" type="button" data-i18n-label="ind.prev" aria-label="Previous"></button>
+        <button class="ind_btn ind_next" type="button" data-i18n-label="ind.next" aria-label="Next"></button>
+      </div>
+    </header>
+  </div>
+
+  <!-- full-bleed scroller, aliniat la container -->
+  <div class="ind_bleed">
+    <div class="ind_trackWrap reveal">
+      <ul class="ind_track" role="list">
+
+        <li class="ind_card" data-accent="1">
+          <div class="ind_band"></div>
+           <div class="ind_media">
+            <img src="assets/img/industries/startups.png" alt="Startups — product launch & fast iteration" loading="lazy">
+           </div>
+          <h3 class="ind_cardTitle" data-i18n="ind.item1.t">Startups</h3>
+          <p class="ind_cardDesc" data-i18n="ind.item1.d">Launch fast, iterate faster — AI that scales.</p>
+          <a class="ind_more" href="#ind-startups" data-i18n="ind.more">Learn more →</a>
+        </li>
+
+        <li class="ind_card" data-accent="2">
+          <div class="ind_band"></div>
+           <div class="ind_media">
+            <img src="assets/img/industries/enterprise.png" alt="Startups — product launch & fast iteration" loading="lazy">
+           </div>
+          <h3 class="ind_cardTitle" data-i18n="ind.item2.t">Enterprise</h3>
+          <p class="ind_cardDesc" data-i18n="ind.item2.d">Compliance, security, global scale — natural AI.</p>
+          <a class="ind_more" href="#ind-enterprise" data-i18n="ind.more">Learn more →</a>
+        </li>
+
+        <li class="ind_card" data-accent="3">
+          <div class="ind_band"></div>
+           <div class="ind_media">
+            <img src="assets/img/industries/e-commerce.png" alt="Startups — product launch & fast iteration" loading="lazy">
+           </div>
+          <h3 class="ind_cardTitle" data-i18n="ind.item3.t">E-commerce</h3>
+          <p class="ind_cardDesc" data-i18n="ind.item3.d">Increase AOV, reduce returns, 24/7 assistance.</p>
+          <a class="ind_more" href="#ind-ecommerce" data-i18n="ind.more">Learn more →</a>
+        </li>
+
+        <li class="ind_card" data-accent="4">
+          <div class="ind_band"></div>
+           <div class="ind_media">
+            <img src="assets/img/industries/restaurants.png" alt="Startups — product launch & fast iteration" loading="lazy">
+           </div>
+          <h3 class="ind_cardTitle" data-i18n="ind.item4.t">Restaurants</h3>
+          <p class="ind_cardDesc" data-i18n="ind.item4.d">Instant reservations, menu Q&A, upsell.</p>
+          <a class="ind_more" href="#ind-restaurants" data-i18n="ind.more">Learn more →</a>
+        </li>
+
+        <li class="ind_card" data-accent="5">
+          <div class="ind_band"></div>
+           <div class="ind_media">
+            <img src="assets/img/industries/healthcare.png" alt="Startups — product launch & fast iteration" loading="lazy">
+           </div>
+          <h3 class="ind_cardTitle" data-i18n="ind.item5.t">Healthcare</h3>
+          <p class="ind_cardDesc" data-i18n="ind.item5.d">Triage, scheduling, patient FAQs — privacy first.</p>
+          <a class="ind_more" href="#ind-healthcare" data-i18n="ind.more">Learn more →</a>
+        </li>
+
+        <li class="ind_card" data-accent="6">
+          <div class="ind_band"></div>
+           <div class="ind_media">
+            <img src="assets/img/industries/education.png" alt="Startups — product launch & fast iteration" loading="lazy">
+           </div>
+          <h3 class="ind_cardTitle" data-i18n="ind.item6.t">Education</h3>
+          <p class="ind_cardDesc" data-i18n="ind.item6.d">Admissions, tutoring, student support — always on.</p>
+          <a class="ind_more" href="#ind-education" data-i18n="ind.more">Learn more →</a>
+        </li>
+
+        <li class="ind_card" data-accent="7">
+          <div class="ind_band"></div>
+           <div class="ind_media">
+            <img src="assets/img/industries/realestate.png" alt="Startups — product launch & fast iteration" loading="lazy">
+           </div>
+          <h3 class="ind_cardTitle" data-i18n="ind.item7.t">Real Estate</h3>
+          <p class="ind_cardDesc" data-i18n="ind.item7.d">Qualify leads, schedule viewings, answer listings.</p>
+          <a class="ind_more" href="#ind-realestate" data-i18n="ind.more">Learn more →</a>
+        </li>
+
+        <li class="ind_card" data-accent="8">
+          <div class="ind_band"></div>
+           <div class="ind_media">
+            <img src="assets/img/industries/travel.png" alt="Startups — product launch & fast iteration" loading="lazy">
+           </div>
+          <h3 class="ind_cardTitle" data-i18n="ind.item8.t">Travel</h3>
+          <p class="ind_cardDesc" data-i18n="ind.item8.d">Itineraries, rebooking, instant support on all channels.</p>
+          <a class="ind_more" href="#ind-travel" data-i18n="ind.more">Learn more →</a>
+        </li>
+
+        <li class="ind_card" data-accent="9">
+          <div class="ind_band"></div>
+           <div class="ind_media">
+            <img src="assets/img/industries/consulting.png" alt="Startups — product launch & fast iteration" loading="lazy">
+           </div>
+          <h3 class="ind_cardTitle" data-i18n="ind.item9.t">Finance</h3>
+          <p class="ind_cardDesc" data-i18n="ind.item9.d">KYC flows, customer care, automation with audit trail.</p>
+          <a class="ind_more" href="#ind-finance" data-i18n="ind.more">Learn more →</a>
+        </li>
+
+        <li class="ind_card" data-accent="10">
+          <div class="ind_band"></div>
+           <div class="ind_media">
+            <img src="assets/img/industries/entertainment.png" alt="Startups — product launch & fast iteration" loading="lazy">
+           </div>
+          <h3 class="ind_cardTitle" data-i18n="ind.item10.t">Entertainment</h3>
+          <p class="ind_cardDesc" data-i18n="ind.item10.d">Fan engagement, ticketing, AI-powered campaigns.</p>
+          <a class="ind_more" href="#ind-entertainment" data-i18n="ind.more">Learn more →</a>
+        </li>
+
+        <li class="ind_card" data-accent="10">
+          <div class="ind_band"></div>
+           <div class="ind_media">
+            <img src="assets/img/industries/hotels.png" alt="Startups — product launch & fast iteration" loading="lazy">
+           </div>
+          <h3 class="ind_cardTitle" data-i18n="ind.item11.t">Entertainment</h3>
+          <p class="ind_cardDesc" data-i18n="ind.item11.d">Fan engagement, ticketing, AI-powered campaigns.</p>
+          <a class="ind_more" href="#ind-hotels" data-i18n="ind.more">Learn more →</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== 6. Detailed Benefits (5 blocks) ===== -->
+<section class="details" id="details">
+  <div class="container">
+    <!-- Item 1 -->
+    <article class="ditem" data-order="1">
+      <div class="ditem__media">
+        <div class="ditem__mockup" aria-hidden="true">
+          <!-- Înlocuiește cu img/video când ai assetul -->
+          <img src="./assets/placeholders/mock-1.png" alt="" loading="lazy">
+        </div>
+      </div>
+      <div class="ditem__content">
+        <h3 class="ditem__title" data-i18n="s6.b1.title">Pachet complet & suport continuu</h3>
+        <p class="ditem__desc" data-i18n="s6.b1.desc">
+          Ai totul de la A la Z — implementare, optimizare, mentenanță — ca investiția să se recupereze rapid.
+        </p>
+        <a href="#" class="btn btn-gradient" data-i18n="s6.cta"></a>
+      </div>
+    </article>
+
+    <!-- Item 2 -->
+    <article class="ditem" data-order="2">
+      <div class="ditem__media">
+        <div class="ditem__mockup" aria-hidden="true">
+          <img src="./assets/placeholders/mock-2.png" alt="" loading="lazy">
+        </div>
+      </div>
+      <div class="ditem__content">
+        <h3 class="ditem__title" data-i18n="s6.b2.title">Integrare cu WhatsApp, Telegram, Mail etc.</h3>
+        <p class="ditem__desc" data-i18n="s6.b2.desc">
+          Chatbotul lucrează acolo unde sunt clienții tăi — mesaj, email sau web — fără fricțiune.
+        </p>
+        <a href="#" class="btn btn-gradient" data-i18n="s6.cta"></a>
+      </div>
+    </article>
+
+    <!-- Item 3 -->
+    <article class="ditem" data-order="3">
+      <div class="ditem__media">
+        <div class="ditem__mockup" aria-hidden="true">
+          <img src="./assets/placeholders/mock-3.png" alt="" loading="lazy">
+        </div>
+      </div>
+      <div class="ditem__content">
+        <h3 class="ditem__title" data-i18n="s6.b3.title">AI inteligent și natural</h3>
+        <p class="ditem__desc" data-i18n="s6.b3.desc">
+          Răspunde natural, învață continuu din conversații și devine mai bun în timp.
+        </p>
+        <a href="#" class="btn btn-gradient" data-i18n="s6.cta"></a>
+      </div>
+    </article>
+
+    <!-- Item 4 -->
+    <article class="ditem" data-order="4">
+      <div class="ditem__media">
+        <div class="ditem__mockup" aria-hidden="true">
+          <img src="./assets/placeholders/mock-4.png" alt="" loading="lazy">
+        </div>
+      </div>
+      <div class="ditem__content">
+        <h3 class="ditem__title" data-i18n="s6.b4.title">Vânzări & clienți fericiți</h3>
+        <p class="ditem__desc" data-i18n="s6.b4.desc">
+          Transformă vizitatorii în clienți, crește vânzările și loialitatea cu răspunsuri rapide.
+        </p>
+        <a href="#" class="btn btn-gradient" data-i18n="s6.cta"></a>
+      </div>
+    </article>
+
+    <!-- Item 5 -->
+    <article class="ditem" data-order="5">
+      <div class="ditem__media">
+        <div class="ditem__mockup" aria-hidden="true">
+          <img src="./assets/placeholders/mock-5.png" alt="" loading="lazy">
+        </div>
+      </div>
+      <div class="ditem__content">
+        <h3 class="ditem__title" data-i18n="s6.b5.title">Integrare rapidă & cloud hosting</h3>
+        <p class="ditem__desc" data-i18n="s6.b5.desc">
+          Se instalează ușor pe orice site, rulează rapid și sigur în cloud, fără bătăi de cap.
+        </p>
+        <a href="#" class="btn btn-gradient" data-i18n="s6.cta"></a>
+      </div>
+    </article>
+  </div>
+</section>
+
+
+
+<!-- ===== 7. Visual break ===== -->
+<section class="vbreak reveal" id="visual-break" aria-label="Visual story break">
+  <!-- media placeholder (îl vei înlocui ulterior cu video) -->
+  <div class="vbreak__media" aria-hidden="true"></div>
+  <div class="vbreak__overlay" aria-hidden="true"></div>
+
+  <!-- conținut central -->
+<div class="container vbreak__content">
+  <h2 class="vbreak__title" data-i18n="s7.title">AI care transformă industrii</h2>
+  <p class="vbreak__desc" data-i18n="s7.sub">
+    De la automatizare la creștere — schimbare vizibilă în câteva săptămâni.
+  </p>
+  <a href="#demo-page" class="btn btn-gradient vbreak__cta" data-i18n="s7.cta">Începe acum</a>
+</div>
+
+    <!-- social proof opțional (poți șterge ușor blocul dacă nu vrei) -->
+   
+    <ul class="vbreak__proof" role="list">
+      <li>
+        <strong data-i18n="s7.k1.n">+100</strong>
+        <span data-i18n="s7.k1.t">clienți în primul an</span>
+      </li>
+      <li>
+        <strong data-i18n="s7.k2.n">+28%</strong>
+        <span data-i18n="s7.k2.t">conversii medii</span>
+      </li>
+      <li>
+        <strong data-i18n="s7.k3.n">–35%</strong>
+        <span data-i18n="s7.k3.t">costuri suport</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+
+
+<!-- ===== 8. Pricing (Linear-style) ===== -->
+<section id="pricing" class="pricing">
+  <div class="container">
+    <header class="pricing__hdr">
+      <h2 class="pricing__title" data-i18n="pricing.title">Flexible plans, real partnership</h2>
+      <p class="pricing__desc" data-i18n="pricing.subtitle">
+        All new customers are contacted by a SmartSquare agent to tailor a plan to their goals — professional, fast, zero fluff.
+      </p>
+
+      <div class="pricing__microlinks">
+        <a href="#compare" class="pricing__link" data-i18n="pricing.compare">Compare plans</a>
+        <span class="pricing__dot" aria-hidden="true">·</span>
+        <a href="#wizard" class="pricing__link" data-i18n="pricing.notSure">Not sure what to choose?</a>
+      </div>
+    </header>
+
+    <div class="pricing__grid" role="list">
+      <!-- Basic -->
+      <article class="pricing__card" id="plan-basic" role="listitem">
+        <div class="pricing__head">
+          <h3 class="pricing__plan" data-i18n="pricing.basic.title">Basic</h3>
+          <p class="pricing__sub" data-i18n="pricing.basic.sub">Start rapid cu un agent AI natural</p>
+          <a href="#contact" class="pricing__contact" data-i18n="pricing.contact">Contact us</a>
+        </div>
+
+        <ul class="pricing__features">
+          <li data-i18n="pricing.basic.f1">Instalare & setare inițială</li>
+          <li data-i18n="pricing.basic.f2">Răspunsuri naturale (OpenAI) + context de bază</li>
+          <li data-i18n="pricing.basic.f3">Formular lead-capture + email alerts</li>
+          <li data-i18n="pricing.basic.f4">Widget web & WhatsApp (opțional)</li>
+          <li data-i18n="pricing.basic.f5">Actualizări lunare ușoare</li>
+        </ul>
+
+        <div class="pricing__cta">
+          <button class="btn btn-gradient pricing__btn" data-expand="basic" data-i18n="pricing.cta">Start now</button>
+          <a class="pricing__alt" href="#contact" data-i18n="pricing.altCta">or contact sales</a>
+        </div>
+
+        <!-- inline form -->
+        <form class="pricing__form" data-form="basic" aria-hidden="true" aria-expanded="false" novalidate>
+          <input type="text" class="pricing__hp" name="company_site" tabindex="-1" autocomplete="off">
+          <div class="pricing__row">
+            <label>
+              <span data-i18n="pricing.form.name">Name</span>
+              <input type="text" name="name" autocomplete="name" required>
+            </label>
+            <label>
+              <span data-i18n="pricing.form.company">Company</span>
+              <input type="text" name="company" autocomplete="organization" required>
+            </label>
+          </div>
+          <div class="pricing__row">
+            <label>
+              <span data-i18n="pricing.form.email">Email</span>
+              <input type="email" name="email" autocomplete="email" required>
+            </label>
+            <label>
+              <span data-i18n="pricing.form.phone">Phone (optional)</span>
+              <input type="tel" name="phone" autocomplete="tel">
+            </label>
+          </div>
+          <div class="pricing__submit">
+            <button type="submit" class="btn btn-gradient" data-i18n="pricing.form.submit">Send request</button>
+            <p class="pricing__privacy">
+              <span data-i18n="pricing.form.privacy">We protect data. No spam.</span>
+              <a href="#privacy" data-i18n="pricing.form.policy">Privacy policy</a>
+            </p>
+          </div>
+          <div class="pricing__thanks" hidden>
+            <strong data-i18n="pricing.form.thanks">Mulțumim! Te contactăm în max. 24h.</strong>
+            <a class="pricing__demo" href="#demo-page" data-i18n="pricing.form.demo">Între timp, vezi un demo →</a>
+          </div>
+        </form>
+      </article>
+
+      <!-- Business -->
+      <article class="pricing__card" id="plan-business" role="listitem">
+        <div class="pricing__head">
+          <h3 class="pricing__plan" data-i18n="pricing.business.title">Business</h3>
+          <p class="pricing__sub" data-i18n="pricing.business.sub">AI care convertește la scară</p>
+          <a href="#contact" class="pricing__contact" data-i18n="pricing.contact">Contact us</a>
+        </div>
+
+        <ul class="pricing__features">
+          <li data-i18n="pricing.business.f1">Tot din Basic</li>
+          <li data-i18n="pricing.business.f2">Ingestion website/catalog + Q&A pe produse</li>
+          <li data-i18n="pricing.business.f3">Reguli de routing: vânzări / suport</li>
+          <li data-i18n="pricing.business.f4">Integrare email + CRM (Zapier/Make)</li>
+          <li data-i18n="pricing.business.f5">Analytics esențial (conversii, intent, CSAT)</li>
+        </ul>
+
+        <div class="pricing__cta">
+          <button class="btn btn-gradient pricing__btn" data-expand="business" data-i18n="pricing.cta">Start now</button>
+          <a class="pricing__alt" href="#contact" data-i18n="pricing.altCta">or contact sales</a>
+        </div>
+
+        <form class="pricing__form" data-form="business" aria-hidden="true" aria-expanded="false" novalidate>
+          <input type="text" class="pricing__hp" name="company_site" tabindex="-1" autocomplete="off">
+          <div class="pricing__row">
+            <label><span data-i18n="pricing.form.name">Name</span><input type="text" name="name" required></label>
+            <label><span data-i18n="pricing.form.company">Company</span><input type="text" name="company" required></label>
+          </div>
+          <div class="pricing__row">
+            <label><span data-i18n="pricing.form.email">Email</span><input type="email" name="email" required></label>
+            <label><span data-i18n="pricing.form.phone">Phone (optional)</span><input type="tel" name="phone"></label>
+          </div>
+          <div class="pricing__submit">
+            <button type="submit" class="btn btn-gradient" data-i18n="pricing.form.submit">Send request</button>
+            <p class="pricing__privacy">
+              <span data-i18n="pricing.form.privacy">We protect data. No spam.</span>
+              <a href="#privacy" data-i18n="pricing.form.policy">Privacy policy</a>
+            </p>
+          </div>
+          <div class="pricing__thanks" hidden>
+            <strong data-i18n="pricing.form.thanks">Mulțumim! Te contactăm în max. 24h.</strong>
+            <a class="pricing__demo" href="#demo-page" data-i18n="pricing.form.demo">Între timp, vezi un demo →</a>
+          </div>
+        </form>
+      </article>
+
+      <!-- Complet -->
+      <article class="pricing__card pricing__card--hero" id="plan-complet" role="listitem" aria-label="Complet plan">
+        <div class="pricing__head">
+          <h3 class="pricing__plan" data-i18n="pricing.complet.title">Complet</h3>
+          <p class="pricing__sub" data-i18n="pricing.complet.sub">Site + Hosting + AI, cap-coadă</p>
+          <a href="#contact" class="pricing__contact" data-i18n="pricing.contact">Contact us</a>
+        </div>
+
+        <ul class="pricing__features">
+          <li data-i18n="pricing.complet.f1">Tot din Business</li>
+          <li data-i18n="pricing.complet.f2">Site performant (Cloudflare Pages) + CDN</li>
+          <li data-i18n="pricing.complet.f3">Design/brand + mockup-uri & micro-animații</li>
+          <li data-i18n="pricing.complet.f4">Mentenanță & optimizări de conversie</li>
+          <li data-i18n="pricing.complet.f5">SLA răspuns 24h, suport în RO/EN</li>
+        </ul>
+
+        <div class="pricing__cta">
+          <button class="btn btn-gradient pricing__btn" data-expand="complet" data-i18n="pricing.cta">Start now</button>
+          <a class="pricing__alt" href="#contact" data-i18n="pricing.altCta">or contact sales</a>
+        </div>
+
+        <form class="pricing__form" data-form="complet" aria-hidden="true" aria-expanded="false" novalidate>
+          <input type="text" class="pricing__hp" name="company_site" tabindex="-1" autocomplete="off">
+          <div class="pricing__row">
+            <label><span data-i18n="pricing.form.name">Name</span><input type="text" name="name" required></label>
+            <label><span data-i18n="pricing.form.company">Company</span><input type="text" name="company" required></label>
+          </div>
+          <div class="pricing__row">
+            <label><span data-i18n="pricing.form.email">Email</span><input type="email" name="email" required></label>
+            <label><span data-i18n="pricing.form.phone">Phone (optional)</span><input type="tel" name="phone"></label>
+          </div>
+          <div class="pricing__submit">
+            <button type="submit" class="btn btn-gradient" data-i18n="pricing.form.submit">Send request</button>
+            <p class="pricing__privacy">
+              <span data-i18n="pricing.form.privacy">We protect data. No spam.</span>
+              <a href="#privacy" data-i18n="pricing.form.policy">Privacy policy</a>
+            </p>
+          </div>
+          <div class="pricing__thanks" hidden>
+            <strong data-i18n="pricing.form.thanks">Mulțumim! Te contactăm în maxim 24h.</strong>
+            <a class="pricing__demo" href="#demo-page" data-i18n="pricing.form.demo">Între timp, vezi un demo →</a>
+          </div>
+        </form>
+      </article>
+
+      <!-- Enterprise -->
+      <article class="pricing__card" id="plan-enterprise" role="listitem">
+        <div class="pricing__head">
+          <h3 class="pricing__plan" data-i18n="pricing.enterprise.title">Enterprise</h3>
+          <p class="pricing__sub" data-i18n="pricing.enterprise.sub">Securitate, control & scalare globală</p>
+          <a href="#contact" class="pricing__contact" data-i18n="pricing.contact">Contact us</a>
+        </div>
+
+        <ul class="pricing__features">
+          <li data-i18n="pricing.enterprise.f1">Tot din Complet</li>
+          <li data-i18n="pricing.enterprise.f2">SSO/SCIM, audit logs, export date</li>
+          <li data-i18n="pricing.enterprise.f3">Instanțe izolate / opțiuni self-hosted hibrid</li>
+          <li data-i18n="pricing.enterprise.f4">Procese legale: DPA, NDA, conformitate</li>
+          <li data-i18n="pricing.enterprise.f5">Suport dedicat / on-site onboarding</li>
+        </ul>
+
+        <div class="pricing__cta">
+          <button class="btn btn-gradient pricing__btn" data-expand="enterprise" data-i18n="pricing.cta">Start now</button>
+          <a class="pricing__alt" href="#contact" data-i18n="pricing.altCta">or contact sales</a>
+        </div>
+
+        <form class="pricing__form" data-form="enterprise" aria-hidden="true" aria-expanded="false" novalidate>
+          <input type="text" class="pricing__hp" name="company_site" tabindex="-1" autocomplete="off">
+          <div class="pricing__row">
+            <label><span data-i18n="pricing.form.name">Name</span><input type="text" name="name" required></label>
+            <label><span data-i18n="pricing.form.company">Company</span><input type="text" name="company" required></label>
+          </div>
+          <div class="pricing__row">
+            <label><span data-i18n="pricing.form.email">Email</span><input type="email" name="email" required></label>
+            <label><span data-i18n="pricing.form.phone">Phone (optional)</span><input type="tel" name="phone"></label>
+          </div>
+          <div class="pricing__submit">
+            <button type="submit" class="btn btn-gradient" data-i18n="pricing.form.submit">Send request</button>
+            <p class="pricing__privacy">
+              <span data-i18n="pricing.form.privacy">We protect data. No spam.</span>
+              <a href="#privacy" data-i18n="pricing.form.policy">Privacy policy</a>
+            </p>
+          </div>
+          <div class="pricing__thanks" hidden>
+            <strong data-i18n="pricing.form.thanks">Mulțumim! Te contactăm în max. 24h.</strong>
+            <a class="pricing__demo" href="#demo-page" data-i18n="pricing.form.demo">Între timp, vezi un demo →</a>
+          </div>
+        </form>
+      </article>
+    </div>
+
+    <p class="pricing__trust" data-i18n="pricing.trust">
+      SSL/TLS by Cloudflare · GDPR-ready · 99.9% uptime
+    </p>
+  </div>
+</section>
+
+
+
+
+<!-- ===== 9. Steps: How it works ===== -->
+<section id="steps" class="steps" aria-labelledby="stepsTitle">
+  <div class="container">
+    <header class="steps__hdr">
+      <h2 id="stepsTitle" class="steps__title" data-i18n="steps.title">
+        Cum funcționează în 3 pași simpli
+      </h2>
+      <p class="steps__subtitle" data-i18n="steps.subtitle">
+        Fără cunoștințe tehnice, fără bătăi de cap — noi facem totul pentru tine.
+      </p>
+    </header>
+
+    <div class="steps__grid" role="list">
+      <!-- Pas 1 -->
+      <article class="steps__col" role="listitem">
+        <div class="steps__media" aria-hidden="true">
+          <!-- Adaugi ulterior: <img src="./assets/steps/step-1.png" alt="Discuție inițială despre nevoi" loading="lazy"> -->
+        </div>
+        <h3 class="steps__h3" data-i18n="steps.s1.title">Discutăm nevoia</h3>
+        <p class="steps__desc" data-i18n="steps.s1.desc">
+          Ne spui businessul tău, obiectivele și unde ai nevoie de AI. Propunem abordarea potrivită.
+        </p>
+      </article>
+
+      <!-- Pas 2 -->
+      <article class="steps__col" role="listitem">
+        <div class="steps__media" aria-hidden="true">
+          <!-- <img src="./assets/steps/step-2.png" alt="Configurare și integrare rapidă a chatbotului" loading="lazy"> -->
+        </div>
+        <h3 class="steps__h3" data-i18n="steps.s2.title">Implementăm rapid</h3>
+        <p class="steps__desc" data-i18n="steps.s2.desc">
+          Configurăm chatbotul (OpenAI), integrăm website/WhatsApp/email și testăm împreună.
+        </p>
+
+        <!-- CTA la mijloc (desktop only) -->
+        <div class="steps__cta steps__cta--mid">
+          <a href="#contact" class="btn btn-gradient" data-i18n="steps.cta">Start now</a>
+        </div>
+      </article>
+
+      <!-- Pas 3 -->
+      <article class="steps__col" role="listitem">
+        <div class="steps__media" aria-hidden="true">
+          <!-- <img src="./assets/steps/step-3.png" alt="Creștere vânzări susținută de agentul AI" loading="lazy"> -->
+        </div>
+        <h3 class="steps__h3" data-i18n="steps.s3.title">Tu crești vânzările</h3>
+        <p class="steps__desc" data-i18n="steps.s3.desc">
+          Agentul AI răspunde nonstop, capturează lead-uri și susține vânzările. Tu vezi rezultatele.
+        </p>
+
+        <!-- CTA pe tablet & mobil (și conform brief pe tablet/ultimul) -->
+        <div class="steps__cta steps__cta--end">
+          <a href="#contact" class="btn btn-gradient" data-i18n="steps.cta">Start now</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- ===== 10. Tech details / differentiators ===== -->
+<section id="tech" class="tech">
+  <div class="container">
+    <header class="tech__hdr">
+      <h2 class="tech__title" data-i18n="tech.title">Technical details that set us apart</h2>
+      <p class="tech__desc" data-i18n="tech.desc">
+        We build on modern AI and a robust cloud to keep your experience fast, secure and transparent.
+      </p>
+
+      <a href="#learn-more" class="btn btn-gradient tech__cta" data-i18n="tech.cta">Learn more</a>
+    </header>
+
+    <!-- Media 16:9 în container (PNG transparent recomandat) -->
+    <div class="tech__media">
+      <img src="" alt="" data-i18n-alt="tech.imgAlt">
+    </div>
+
+    <!-- separator punctat între media și listă -->
+    <hr class="tech__sep" aria-hidden="true" />
+
+    <ul class="tech__list" role="list">
+      <!-- 1 -->
+      <li class="tech__item" role="listitem">
+        <h3 class="tech__itemTitle" data-i18n="tech.i1.t">Latest-gen OpenAI / LLM integration</h3>
+        <p class="tech__itemDesc" data-i18n="tech.i1.d1">
+          The chatbot uses advanced models (OpenAI GPT) with domain fine-tuning.
+        </p>
+        <p class="tech__itemDesc" data-i18n="tech.i1.d2">
+          Multi-language support and context adaptation.
+        </p>
+      </li>
+
+      <!-- 2 -->
+      <li class="tech__item" role="listitem">
+        <h3 class="tech__itemTitle" data-i18n="tech.i2.t">Global cloud hosting (with CDN)</h3>
+        <p class="tech__itemDesc" data-i18n="tech.i2.d1">
+          Cloudflare / AWS infrastructure with fast delivery worldwide.
+        </p>
+        <p class="tech__itemDesc" data-i18n="tech.i2.d2">
+          Automatic optimization for low latency and high availability.
+        </p>
+      </li>
+
+      <!-- 3 -->
+      <li class="tech__item" role="listitem">
+        <h3 class="tech__itemTitle" data-i18n="tech.i3.t">Guaranteed SLA & uptime</h3>
+        <p class="tech__itemDesc" data-i18n="tech.i3.d1">99.9% contractual uptime.</p>
+        <p class="tech__itemDesc" data-i18n="tech.i3.d2">
+          24h support SLA and fast resolution for critical incidents.
+        </p>
+      </li>
+
+      <!-- 4 -->
+      <li class="tech__item" role="listitem">
+        <h3 class="tech__itemTitle" data-i18n="tech.i4.t">Enterprise-grade security</h3>
+        <p class="tech__itemDesc" data-i18n="tech.i4.d1">End-to-end encrypted connections (TLS 1.3).</p>
+        <p class="tech__itemDesc" data-i18n="tech.i4.d2">
+          GDPR compliance & EU data residency options.
+        </p>
+      </li>
+
+      <!-- 5 -->
+      <li class="tech__item" role="listitem">
+        <h3 class="tech__itemTitle" data-i18n="tech.i5.t">Control & transparency</h3>
+        <p class="tech__itemDesc" data-i18n="tech.i5.d1">
+          Dashboard with stats (messages processed, leads, intents).
+        </p>
+        <p class="tech__itemDesc" data-i18n="tech.i5.d2">
+          Easy data export (CSV/Excel) and control over conversation flows.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+
+
+<!-- ===== 11. FAQ ===== -->
+<section id="faq" class="faq">
+  <div class="container">
+    <!-- separator top -->
+    <div class="faq__rule" aria-hidden="true"></div>
+
+    <header class="faq__hdr">
+      <h2 class="faq__title" data-i18n="faq.title">Întrebări frecvente</h2>
+      <p class="faq__desc" data-i18n="faq.desc">
+        Găsești rapid răspunsurile la cele mai comune întrebări.
+      </p>
+      <button class="btn btn-gradient faq__cta"
+              type="button"
+              data-i18n="faq.cta"
+              aria-controls="faq-list"
+              aria-expanded="false">
+        Verifică răspunsuri
+      </button>
+    </header>
+
+    <ul id="faq-list" class="faq__list" role="list" hidden>
+      <!-- 1 -->
+      <li class="faq__item" role="listitem">
+        <h3 class="faq__q" data-i18n="faq.items.1.q">Ce este un chatbot AI și cum mă poate ajuta?</h3>
+        <p class="faq__a" data-i18n="faq.items.1.a">
+          Un chatbot AI este un asistent digital inteligent, capabil să răspundă clienților în timp real,
+          să ofere informații, să facă recomandări și să convertească vizitatorii în clienți.
+        </p>
+      </li>
+      <!-- 2 -->
+      <li class="faq__item" role="listitem">
+        <h3 class="faq__q" data-i18n="faq.items.2.q">Pot integra chatbotul pe site-ul meu actual?</h3>
+        <p class="faq__a" data-i18n="faq.items.2.a">
+          Da. Chatbotul se poate integra ușor pe orice site existent, indiferent de platformă (WordPress, Shopify, custom).
+        </p>
+      </li>
+      <!-- 3 -->
+      <li class="faq__item" role="listitem">
+        <h3 class="faq__q" data-i18n="faq.items.3.q">Poate chatbotul să fie legat și de WhatsApp, Telegram sau Facebook Messenger?</h3>
+        <p class="faq__a" data-i18n="faq.items.3.a">
+          Da. Putem conecta chatbotul direct la platformele de mesagerie preferate, iar tu poți prelua manual conversația oricând dorești.
+        </p>
+      </li>
+      <!-- 4 -->
+      <li class="faq__item" role="listitem">
+        <h3 class="faq__q" data-i18n="faq.items.4.q">Cum se diferențiază chatbotul AI de unul clasic, cu răspunsuri predefinite?</h3>
+        <p class="faq__a" data-i18n="faq.items.4.a">
+          Un chatbot AI bazat pe OpenAI oferă răspunsuri naturale și personalizate, înțelege contextul și învață continuu.
+        </p>
+      </li>
+      <!-- 5 -->
+      <li class="faq__item" role="listitem">
+        <h3 class="faq__q" data-i18n="faq.items.5.q">Cât durează implementarea?</h3>
+        <p class="faq__a" data-i18n="faq.items.5.a">
+          De obicei, 3–10 zile, în funcție de complexitate și nivelul de personalizare.
+        </p>
+      </li>
+      <!-- 6 -->
+      <li class="faq__item" role="listitem">
+        <h3 class="faq__q" data-i18n="faq.items.6.q">Trebuie să am cunoștințe tehnice pentru a folosi chatbotul?</h3>
+        <p class="faq__a" data-i18n="faq.items.6.a">
+          Nu. Totul este gestionat de noi. Primești un dashboard simplu, iar mentenanța e inclusă.
+        </p>
+      </li>
+      <!-- 7 -->
+      <li class="faq__item" role="listitem">
+        <h3 class="faq__q" data-i18n="faq.items.7.q">Pot să personalizez felul în care răspunde chatbotul?</h3>
+        <p class="faq__a" data-i18n="faq.items.7.a">
+          Da. Ton formal/prietenos, elemente de brand și stil adaptat businessului tău.
+        </p>
+      </li>
+      <!-- 8 -->
+      <li class="faq__item" role="listitem">
+        <h3 class="faq__q" data-i18n="faq.items.8.q">Cum primesc notificările despre clienții noi?</h3>
+        <p class="faq__a" data-i18n="faq.items.8.a">
+          Primești email instant (opțional și WhatsApp/Telegram). Vezi și rapoarte săptămânale.
+        </p>
+      </li>
+      <!-- 9 -->
+      <li class="faq__item" role="listitem">
+        <h3 class="faq__q" data-i18n="faq.items.9.q">Ce se întâmplă dacă chatbotul nu știe răspunsul?</h3>
+        <p class="faq__a" data-i18n="faq.items.9.a">
+          Oferă un răspuns general și poate direcționa către un operator sau trimite notificare pentru follow-up.
+        </p>
+      </li>
+      <!-- 10 -->
+      <li class="faq__item" role="listitem">
+        <h3 class="faq__q" data-i18n="faq.items.10.q">Chatbotul este sigur și respectă GDPR?</h3>
+        <p class="faq__a" data-i18n="faq.items.10.a">
+          Da. Conexiuni criptate (TLS 1.3) și conformitate GDPR.
+        </p>
+      </li>
+      <!-- 11 -->
+      <li class="faq__item" role="listitem">
+        <h3 class="faq__q" data-i18n="faq.items.11.q">Care sunt costurile pentru un chatbot AI?</h3>
+        <p class="faq__a" data-i18n="faq.items.11.a">
+          Avem planuri Basic, Business, Complet și Enterprise — configurate personalizat după nevoie.
+        </p>
+      </li>
+      <!-- 12 -->
+      <li class="faq__item" role="listitem">
+        <h3 class="faq__q" data-i18n="faq.items.12.q">Pot să testez chatbotul înainte de decizie?</h3>
+        <p class="faq__a" data-i18n="faq.items.12.a">
+          Da. Avem demo interactiv pe site.
+        </p>
+      </li>
+      <!-- 13 -->
+      <li class="faq__item" role="listitem">
+        <h3 class="faq__q" data-i18n="faq.items.13.q">Poate chatbotul să proceseze comenzi sau plăți?</h3>
+        <p class="faq__a" data-i18n="faq.items.13.a">
+          Da, pentru anumite integrări ecommerce poate ghida comanda sau trimite linkuri de plată.
+        </p>
+      </li>
+      <!-- 14 -->
+      <li class="faq__item" role="listitem">
+        <h3 class="faq__q" data-i18n="faq.items.14.q">Ce suport primesc după implementare?</h3>
+        <p class="faq__a" data-i18n="faq.items.14.a">
+          Suport 24/7 și actualizări regulate. Mentenanță și optimizare continuă.
+        </p>
+      </li>
+      <!-- 15 -->
+      <li class="faq__item" role="listitem">
+        <h3 class="faq__q" data-i18n="faq.items.15.q">De ce SmartSquare și nu alt furnizor?</h3>
+        <p class="faq__a" data-i18n="faq.items.15.a">
+          Pachet complet: AI natural, integrare multi-platformă, site & hosting rapid, consultanță și suport personalizat.
+        </p>
+      </li>
+    </ul>
+
+    <!-- separator bottom -->
+    <div class="faq__rule" aria-hidden="true"></div>
+  </div>
+
+  <!-- SEO: FAQPage JSON-LD -->
+  <script type="application/ld+json" id="faq-jsonld"></script>
+</section>
+
+
+
+
+<!-- ===== Footer ===== -->
+<footer class="footer" id="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__grid" role="navigation" aria-label="Footer">
+      <!-- Col 0: Logo -->
+      <div class="footer__brand">
+        <!-- Folosim fix același “logo” ca în header (înlocuiești cu <img> când ai fișierul) -->
+        <a href="#home" class="footer__logo" aria-label="SmartSquare">
+          <span>smartsquare</span>
+        </a>
+      </div>
+
+      <!-- Col 1: Companie -->
+      <nav class="footer__col">
+        <h3 class="footer__title" data-i18n="foot.company.t">Company</h3>
+        <ul class="footer__list">
+          <li><a class="footer__link" href="#about"      data-i18n="foot.company.about">About us</a></li>
+          <li><a class="footer__link" href="#careers"    data-i18n="foot.company.careers">Careers</a></li>
+          <li><a class="footer__link" href="#contact"    data-i18n="foot.company.contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Col 2: Produs -->
+      <nav class="footer__col">
+        <h3 class="footer__title" data-i18n="foot.product.t">Product</h3>
+        <ul class="footer__list">
+          <li><a class="footer__link" href="#pricing"    data-i18n="foot.product.pricing">Pricing</a></li>
+          <li><a class="footer__link" href="#demo"       data-i18n="foot.product.demo">Demo</a></li>
+          <li><a class="footer__link" href="#integrations" data-i18n="foot.product.integrations">Integrations</a></li>
+          <li><a class="footer__link" href="#docs"       data-i18n="foot.product.docs">Documentation</a></li>
+        </ul>
+      </nav>
+
+      <!-- Col 3: Resurse -->
+      <nav class="footer__col">
+        <h3 class="footer__title" data-i18n="foot.resources.t">Resources</h3>
+        <ul class="footer__list">
+          <li><a class="footer__link" href="#faq"        data-i18n="foot.resources.faq">FAQ</a></li>
+          <li><a class="footer__link" href="#blog"       data-i18n="foot.resources.blog">Blog</a></li>
+          <li><a class="footer__link" href="#gdpr"       data-i18n="foot.resources.gdpr">GDPR Policy</a></li>
+          <li><a class="footer__link" href="#privacy"    data-i18n="foot.resources.privacy">Privacy</a></li>
+          <li><a class="footer__link" href="#terms"      data-i18n="foot.resources.terms">Terms</a></li>
+        </ul>
+      </nav>
+
+      <!-- Col 4: Conectează-te -->
+      <nav class="footer__col">
+        <h3 class="footer__title" data-i18n="foot.connect.t">Connect</h3>
+        <ul class="footer__list">
+          <li><a class="footer__link" href="#github"     data-i18n="foot.connect.github">GitHub</a></li>
+          <li><a class="footer__link" href="#youtube"    data-i18n="foot.connect.youtube">YouTube</a></li>
+          <li><a class="footer__link" href="#linkedin"   data-i18n="foot.connect.linkedin">LinkedIn</a></li>
+          <li><a class="footer__link" href="#whatsapp"   data-i18n="foot.connect.whatsapp">WhatsApp Business</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copy" data-i18n="foot.copy">© 2025 SmartSquare Group SRL</p>
+    </div>
+  </div>
+</footer>
+
+
+
+
+  <!-- Mobile bottom bar (vizibilă doar pe ecrane mici) -->
+<div class="mobile-cta-bar" role="region" aria-label="Mobile actions">
+  <button
+    class="btn btn-gradient mobile-cta"
+    data-i18n="mb.startNow"
+    data-i18n-label="mb.startNow"
+    aria-label="Start Now"
+    id="mbStartNow">
+    Start Now
+  </button>
+
+  <button
+    class="btn btn-gradient mobile-cta"
+    data-i18n="mb.contactSales"
+    data-i18n-label="mb.contactSales"
+    aria-label="Contact Sales"
+    id="mbContactSales">
+    Contact Sales
+  </button>
+</div>
+
+ <script src="./assets/main.js?v=3" defer></script>
+</body>
+</html>
+
