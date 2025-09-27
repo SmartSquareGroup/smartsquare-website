@@ -1905,3 +1905,61 @@ a.btn, .btn{
 .hero_video, .cluster-bg { position: absolute; inset: 0; z-index: -1; }
 
 
+
+/* Mobile-only gradient tune: mai mult mov, mai puțin roz */
+@media (max-width: 640px){
+  .btn.btn-gradient{
+    /* întind movul ~80% din buton, roz doar spre capăt */
+    background-image: linear-gradient(135deg, #6e5bff 0%, #6e5bff 88%, #ff5ad6 100%);
+    background-size: 100% 100%;
+    background-position: left center; /* evită „derapajul” culorilor */
+  }
+}
+
+
+
+/* Baza: nu strică desktopul */
+.hero__email{
+  position: relative;
+  max-width: 720px; /* ajustează după caz */
+}
+
+/* Mobil: pill + buton mic integrat */
+@media (max-width: 640px){
+  .hero__email{
+    background: rgba(255,255,255,.08);
+    border: 1px solid rgba(255,255,255,.16);
+    border-radius: 999px;
+    padding-right: 96px;        /* spațiu pentru buton */
+    backdrop-filter: blur(6px);
+  }
+  .hero__emailInput{
+    width: 100%;
+    height: 52px;
+    padding: 0 16px;
+    background: transparent;
+    border: 0;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+  }
+  .hero__emailInput::placeholder{ color: rgba(255,255,255,.65); }
+
+  .hero__emailSend{
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    height: 40px;               /* mai mic decât pe desktop */
+    padding: 0 14px;
+    border-radius: 999px;
+    font-size: 14px;
+    line-height: 40px;
+    white-space: nowrap;
+  }
+
+  /* Dacă mai ai și butonul „Talk to us” sub câmp, îl poți face full-width */
+  .hero .btn--talk { width: 100%; }
+}
+
+
+
