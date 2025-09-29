@@ -123,9 +123,9 @@ s7: {
   title: "AI care transformă industrii",
   sub:   "De la automatizare la creștere — schimbare vizibilă în câteva săptămâni.",
   cta:   "Începe acum",
-  k1:{ n:"+100", t:"clienți în primul an" },
+  k1:{ n:"-35%", t:"costuri suport" },
   k2:{ n:"+28%", t:"conversii medii" },
-  k3:{ n:"–35%", t:"costuri suport" }
+  k3:{ n:"+100", t:"clienți în primul an" }
 },
 
 pricing: {
@@ -217,7 +217,7 @@ steps: {
 tech: {
   title: "Detalii tehnice care ne diferențiază",
   desc: "Construim pe AI modern și cloud robust pentru o experiență rapidă, sigură și transparentă.",
-  cta: "Află mai mult",
+  cta: "Află detalii",
   imgAlt: "Ilustrație tehnică SmartSquare",
   i1: {
     t: "Integrare OpenAI / LLM de ultimă generație",
@@ -395,9 +395,9 @@ s7: {
   title: "AI that transforms industries",
   sub:   "From automation to growth — visible change in weeks.",
   cta:   "Get started",
-  k1:{ n:"+100", t:"customers in year one" },
+  k1:{ n:"-35%", t:"support costs" },
   k2:{ n:"+28%", t:"average conversions" },
-  k3:{ n:"–35%", t:"support costs" }
+  k3:{ n:"+100", t:"customers in year one" }
 },
 
 pricing: {
@@ -884,7 +884,7 @@ function loop(){
     return; 
   }
   const max = () => track.scrollWidth - wrap.clientWidth;
-  if (wrap.scrollLeft >= max() -0) {
+  if (wrap.scrollLeft >= max() - 0) {
     // Am ajuns la final → stop
     stop(); 
     return;
@@ -970,7 +970,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // dimensiuni corecte: track = total; wrap = viewport
     const max = track.scrollWidth - wrap.clientWidth;
     if (!paused && max > 0) {
-      if (wrap.scrollLeft >= max - 1) {
+      if (wrap.scrollLeft >= max() - 0) {
         // reia lin de la început
         wrap.scrollLeft = 0;
       } else {
@@ -1099,8 +1099,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (lastSubmit.has(key) && (now - lastSubmit.get(key) < 8000)) return; // 8s throttle
 
       const email = form.querySelector('input[name="email"]');
-      if (!EMAIL_RE.test(email.value.trim())){
-        email.focus();
+      if (!EMAIL_RE.test(email.value.trim())){        
         // 🔑 i18n pentru validare email
         const msg = window.t?.('pricing.form.invalidEmail') || 'Please enter a valid email.';
         email.setCustomValidity(msg);

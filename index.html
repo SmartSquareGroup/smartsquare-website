@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>SmartSquare</title>
 
-  <link rel="preload" href="./assets/videos/hero.mp4" as="video" type="video/mp4">
+  <link rel="preload" href="./assets/img/hero/hero.jpeg" as="image">
   <link rel="stylesheet" href="./assets/style.css?v=3">
 </head>
 <body>
@@ -52,15 +52,14 @@
   </header>
 
 <section class="intro-cluster" id="intro-cluster">
-  <video class="cluster-bg" playsinline muted loop autoplay poster="assets/videos/hero-poster.jpg"></video>
+  <img class="cluster-bg" src="./assets/img/hero/hero.jpeg" alt="SmartSquare hero" />
   <div class="cluster-overlay"></div>
 
   <!-- HERO -->
   <header class="hero" id="home">
     <!-- Video background -->
-    <video class="hero__video" src="./assets/videos/hero.mp4"
-           autoplay muted loop playsinline
-           poster="./assets/videos/hero-poster.jpg"></video>
+    <img class="hero__video" src="./assets/img/hero/hero.jpeg"
+           poster="./assets/img/hero/hero.png"></img>
     <div class="hero__overlay"></div>
 
 
@@ -96,6 +95,7 @@
 
     <!-- sloturile vizibile (3 coloane) -->
     <ul class="logos-slots" role="list">
+  <li class="logo-slot"><img alt=""></li>
   <li class="logo-slot"><img alt=""></li>
   <li class="logo-slot"><img alt=""></li>
   <li class="logo-slot"><img alt=""></li>
@@ -180,7 +180,8 @@
     <div class="demo__grid">
       <!-- Stânga: media (placeholder până ai mockup-ul) -->
       <div class="demo__media">
-      <div class="demo__mock reveal" aria-hidden="true"></div>
+        <img class="demo__img" src="assets/img/demo/demo.png" alt="Demo chat bot" loading="lazy">
+      <div class="demo__mock-reveal" aria-hidden="true"></div>
     </div>
 
 
@@ -351,7 +352,7 @@
       <div class="ditem__media">
         <div class="ditem__mockup" aria-hidden="true">
           <!-- Înlocuiește cu img/video când ai assetul -->
-          <img src="./assets/placeholders/mock-1.png" alt="" loading="lazy">
+          <img src="./assets/img/benefits/benefit1.jpeg" alt="" loading="lazy">
         </div>
       </div>
       <div class="ditem__content">
@@ -367,7 +368,7 @@
     <article class="ditem" data-order="2">
       <div class="ditem__media">
         <div class="ditem__mockup" aria-hidden="true">
-          <img src="./assets/placeholders/mock-2.png" alt="" loading="lazy">
+          <img src="./assets/img/benefits/benefit2.jpeg" alt="" loading="lazy">
         </div>
       </div>
       <div class="ditem__content">
@@ -383,7 +384,7 @@
     <article class="ditem" data-order="3">
       <div class="ditem__media">
         <div class="ditem__mockup" aria-hidden="true">
-          <img src="./assets/placeholders/mock-3.png" alt="" loading="lazy">
+          <img src="./assets/img/benefits/benefit3.jpeg" alt="" loading="lazy">
         </div>
       </div>
       <div class="ditem__content">
@@ -399,7 +400,7 @@
     <article class="ditem" data-order="4">
       <div class="ditem__media">
         <div class="ditem__mockup" aria-hidden="true">
-          <img src="./assets/placeholders/mock-4.png" alt="" loading="lazy">
+          <img src="./assets/img/benefits/benefit4.jpeg" alt="" loading="lazy">
         </div>
       </div>
       <div class="ditem__content">
@@ -415,7 +416,7 @@
     <article class="ditem" data-order="5">
       <div class="ditem__media">
         <div class="ditem__mockup" aria-hidden="true">
-          <img src="./assets/placeholders/mock-5.png" alt="" loading="lazy">
+          <img src="./assets/img/benefits/benefit5.jpeg" alt="" loading="lazy">
         </div>
       </div>
       <div class="ditem__content">
@@ -436,6 +437,7 @@
   <!-- media placeholder (îl vei înlocui ulterior cu video) -->
   <div class="vbreak__media" aria-hidden="true"></div>
   <div class="vbreak__overlay" aria-hidden="true"></div>
+  <img src="./assets/img/pause/visualpause.jpeg" alt="" loading="lazy">
 
   <!-- conținut central -->
 <div class="container vbreak__content">
@@ -450,16 +452,16 @@
    
     <ul class="vbreak__proof" role="list">
       <li>
-        <strong data-i18n="s7.k1.n">+100</strong>
-        <span data-i18n="s7.k1.t">clienți în primul an</span>
+        <strong data-i18n="s7.k1.n">-35%</strong>
+        <span data-i18n="s7.k1.t">costuri suport</span>
       </li>
       <li>
         <strong data-i18n="s7.k2.n">+28%</strong>
         <span data-i18n="s7.k2.t">conversii medii</span>
       </li>
       <li>
-        <strong data-i18n="s7.k3.n">–35%</strong>
-        <span data-i18n="s7.k3.t">costuri suport</span>
+        <strong data-i18n="s7.k3.n">+100</strong>
+        <span data-i18n="s7.k3.t">clienti in primul an</span>
       </li>
     </ul>
   </div>
@@ -705,6 +707,7 @@
       <article class="steps__col" role="listitem">
         <div class="steps__media" aria-hidden="true">
           <!-- Adaugi ulterior: <img src="./assets/steps/step-1.png" alt="Discuție inițială despre nevoi" loading="lazy"> -->
+           <img src="./assets/img/steps/step1.jpeg" alt="Discuție inițială despre nevoi" loading="lazy">
         </div>
         <h3 class="steps__h3" data-i18n="steps.s1.title">Discutăm nevoia</h3>
         <p class="steps__desc" data-i18n="steps.s1.desc">
@@ -716,6 +719,7 @@
       <article class="steps__col" role="listitem">
         <div class="steps__media" aria-hidden="true">
           <!-- <img src="./assets/steps/step-2.png" alt="Configurare și integrare rapidă a chatbotului" loading="lazy"> -->
+           <img src="./assets/img/steps/step2.jpeg" alt="Configurare și integrare rapidă a chatbotului" loading="lazy">
         </div>
         <h3 class="steps__h3" data-i18n="steps.s2.title">Implementăm rapid</h3>
         <p class="steps__desc" data-i18n="steps.s2.desc">
@@ -732,6 +736,7 @@
       <article class="steps__col" role="listitem">
         <div class="steps__media" aria-hidden="true">
           <!-- <img src="./assets/steps/step-3.png" alt="Creștere vânzări susținută de agentul AI" loading="lazy"> -->
+           <img src="./assets/img/steps/step3.jpeg" alt="Creștere vânzări susținută de agentul AI" loading="lazy">
         </div>
         <h3 class="steps__h3" data-i18n="steps.s3.title">Tu crești vânzările</h3>
         <p class="steps__desc" data-i18n="steps.s3.desc">
@@ -764,7 +769,7 @@
 
     <!-- Media 16:9 în container (PNG transparent recomandat) -->
     <div class="tech__media">
-      <img src="" alt="" data-i18n-alt="tech.imgAlt">
+      <img src="./assets/img/technicals/technical.jpeg" alt="Toate datele tehnice" data-i18n-alt="tech.imgAlt">
     </div>
 
     <!-- separator punctat între media și listă -->
